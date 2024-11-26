@@ -1,0 +1,59 @@
+html,
+body {
+    margin: 0;
+}
+
+/* Wrap */
+.flex-container {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    /*  put something like margin to all inside elements only if find element near him   */
+}
+
+/* main Container */
+.container {
+    width: 1024px;
+    height: 1124px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* First column */
+.profile-info {
+    width: 25%;
+    padding-top: 15px;
+    padding-left: 20px;
+    gap: 20px;
+    display: flex;
+    /* justify-content: center;  center elements horizontal */
+    /* align-items: flex-start; center elements  vertical */
+}
+
+/* Second column */
+.feeds-info {
+    width: 50%;
+    padding-top: 15px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Third column */
+.requests-info {
+    width: 25%;
+    padding-top: 15px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.profile-info,
+.feeds-info,
+.requests-info {
+    border: 1px solid #ccc;
+}
