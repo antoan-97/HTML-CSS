@@ -1,6 +1,7 @@
-html,
-body {
+* {
+    padding: 0;
     margin: 0;
+    font-family: Helvetica, sans-serif;
 }
 
 /* Wrap */
@@ -11,7 +12,7 @@ body {
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; 
+    gap: 10px;
     /*  put something like margin to all inside elements only if find element near him   */
 }
 
@@ -56,4 +57,85 @@ body {
 .feeds-info,
 .requests-info {
     border: 1px solid #ccc;
+}
+
+.profile-elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.span-biger {
+    font-size: 20px;
+}
+
+
+/* .span-position {
+} */
+.followers li span:first-child {
+    font-weight: bold;
+
+}
+
+.icons span:first-child {
+    font-weight: bold;
+}
+
+.followers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    margin: 20px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    border-top: 1px dotted;
+}
+
+.icons a div {
+    display: flex;
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.friend {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.chat-icon{
+    margin-left: 30px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
