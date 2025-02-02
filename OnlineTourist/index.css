@@ -16,6 +16,11 @@
     font-size: 14px;
 }
 
+.dotted {
+    border-top: 1px dotted;
+
+}
+
 /* Wrap */
 .flex-container {
     width: 100%;
@@ -58,7 +63,7 @@
 }
 
 /* Third column */
-.requests-suggest {
+.requests-container {
     width: 25%;
     padding-top: 15px;
     padding-left: 20px;
@@ -67,16 +72,16 @@
     flex-direction: column;
 }
 
-.requests {
+.requests-suggestions {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
 .profile-info,
 .feeds-info,
-.requests-suggest {
+.requests-container {
     border: 1px solid #ccc;
 }
 
@@ -97,6 +102,7 @@
     gap: 10px;
     font-size: 1rem;
     font-weight: bold;
+    margin: 20px 0;
 }
 
 .span-biger {
@@ -199,9 +205,16 @@ i {
     gap: 6px;
 }
 
+/* .suggest-friend {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+} */
+
 .flex-start {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 6px;
+    gap: 15px;
 }
